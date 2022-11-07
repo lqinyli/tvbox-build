@@ -2,7 +2,7 @@ name: Build
 
 on:
   schedule:
-    - cron: 10,40 0-15,23 * * *
+    - cron: 15 5 * * *
 #  push:
 #    branches:
 #      - main
@@ -26,8 +26,8 @@ jobs:
       # 登录蓝奏云后在控制台运行document.cookie
       ylogin: ${{ secrets.YLOGIN }}
       phpdisk_info: ${{ secrets.PHPDISK_INFO }}
-      # 蓝奏云里的文件夹ID（TVBoxOS:5848262）
-      lanzou_folder_id: 5848262
+      # 蓝奏云里的文件夹ID（TVBoxOS:6395468）
+      lanzou_folder_id: 6395468
 
     steps:
 #      - name: IP
